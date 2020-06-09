@@ -27,8 +27,8 @@ fieldset {
 }
 
 #resultsDisplay {
-    height: 200px;
-    margin-top: 800px;
+    height: 100%;
+    margin-top: 400px;
     background-color: lightgray;
     margin-right: 0;
     margin-left: 0;
@@ -44,3 +44,7 @@ li {
     padding-top: 20px;
 }
 
+.resultImage {
+    height: 250px;
+    width: 250px;
+}
