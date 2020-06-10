@@ -48,3 +48,8 @@ li {
     height: 250px;
     width: 250px;
 }
+
+#ytResults {
+    display: flex;
+    flex-direction: column;
+}
