@@ -1,5 +1,8 @@
 body {
     margin: auto;
+    background-color: rgb(73, 23, 40);
+    color: white;
+    
 }
 
 form {
@@ -7,49 +10,188 @@ form {
     display: flex;
     align-items: center;
     flex-direction: column;
+    font-family: 'Quicksand', sans-serif
 }
 
 fieldset {
     border: none;
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
+}
 
+#byIngredient {
+    margin-left: 70px;
+}
+
+.searchByRadio {
+    color: white;
 }
 
 .fieldsetContents {
     margin-bottom: 30px;
     margin: 0;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#searchWord:focus, #searchWord:hover, #searchWord:visited, #searchWord {
+    background: none;
+    background-color: transparent;
+    color: white;
+    border-bottom: 1px solid white;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    margin-top: 20px;
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #searchButton {
     max-width: 100px;
-    font-size: medium;
+    font-size: 25px;
+    background: transparent;
+    color: white;
+    border-bottom: 1px white solid;
+    border-radius: 7px;
+    padding: 10px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    font-family: 'Montserrat', sans-serif;
 }
+
+#or {
+    margin-top: 100px;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 23px;
+}
+
+#randomContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.randomButtons {
+    background: transparent;
+    color: white;
+    width: 140px;
+    font-size: 20px;
+    margin-bottom: 300px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#randomAlc {
+    margin-right: 15px;
+}
+
+
 
 #resultsDisplay {
     height: 100%;
     margin-top: 400px;
-    background-color: lightgray;
-    margin-right: 0;
-    margin-left: 0;
+    background-color: rgb(73, 23, 40);
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#resultslist {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#resultslist > .multiDrinkResult {
+    max-width: 250px;
 }
 
 ul {
     list-style: none;
-    margin-top: 50px
+    margin-top: 50px;
+    padding-left: 0;
 }
 
 li {
     text-align: center;
-    padding-top: 20px;
+    margin-bottom: 80px;
 }
 
 .resultImage {
     height: 250px;
     width: 250px;
+    border: 2px white solid;
+}
+
+.drinkResultsName {
+    font-size: 20px;
 }
 
 #ytResults {
     display: flex;
     flex-direction: column;
+}
+
+.ytResultItems {
+    margin-bottom: 50px;
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    margin-bottom: 50px;
+
+}
+
+.recipe {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Smartphones*/
+@media only screen and (min-width : 321px) {
+
+}
+
+@media only screen and (min-width : 850px) {
+    .resultsContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 {
+        margin-top: 0;
+    }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+    #resultLeft {
+        margin-right: 150px;
+    }
 }

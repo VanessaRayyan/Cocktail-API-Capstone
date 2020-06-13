@@ -5,17 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cocktail Recipes</title>
     <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="container">
         <form>
             <fieldset>
-                <label class="fieldsetContents" for="cocktailSearch">Cocktail search by name</label>
-                <input id="searchWord" class="fieldsetContents" name="cocktailSearch" required/>
+                <label class="fieldsetContents" for="cocktailSearch">Cocktail search by</label>
+                <div class="searchByRadio">
+                    <input type="radio" name="selection" id="byName" checked>Name</radio>
+                    <input type="radio" name="selection" id="byIngredient">Ingredient</radio>
+                </div>
+                <input id="searchWord" class="fieldsetContents" name="cocktailSearch" required autofocus placeholder="Type here"/>
             </fieldset>
             <button id="searchButton" type="submit">search</button>
+            <span id="or">OR <br>get a random drink</span>
+            <div id="randomContainer">
+                <button class="randomButtons" id="randomAlc">alcoholic</button>
+                <button class="randomButtons" id="randomNon">non-alcoholic</button>
+            </div>
         </form>
-        
+
         <section id="resultsDisplay">
             <ul id="resultslist">
             </ul>
