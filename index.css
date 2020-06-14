@@ -163,11 +163,6 @@ h2 {
     margin-right: auto;
 }
 
-/* Smartphones*/
-@media only screen and (min-width : 321px) {
-
-}
-
 @media only screen and (min-width : 850px) {
     .resultsContainer {
         display: flex;
@@ -177,16 +172,6 @@ h2 {
     h2 {
         margin-top: 0;
     }
-}
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-
-}
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-
 }
 
 /* Desktops and laptops ----------- */
