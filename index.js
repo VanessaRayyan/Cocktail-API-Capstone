@@ -6,7 +6,7 @@ const randomAlcURL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=A
 const randomNonURL = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic";
 const fullCocktail = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=";
 const youtubeAPIsearch = 'https://www.googleapis.com/youtube/v3/search';
-const ytKey = 'AIzaSyCw0ku4U1cMqdpqwFaYYSH9q2mJSPwlQWo';
+const ytKey = 'REMOVED';
 
 let drinkArray = null;
 let showingDrink = false;
@@ -82,8 +82,6 @@ function getYoutubeVideosTEMPORARY() {
 }
 
 function displayYoutubeVideos(videolist){
-    //console.log(JSON.stringify(videolist));
-    //console.log(videolist);
     let ytContainer = $('#youtubeResult').html("<h2>Here are some related recipe videos!</h2>");
     ytContainer.append("<div id='ytResults'></div>");
     let results = $('#ytResults');
@@ -204,8 +202,8 @@ function renderDrinkPage(drink) {
   finalHTML += `</li>`;
   resultContainer.html(finalHTML);
 
-  getYouTubeVideos(drink.strDrink+" drink recipe", 5);
-  //getYoutubeVideosTEMPORARY();
+  //getYouTubeVideos(drink.strDrink+" drink recipe", 5);
+  getYoutubeVideosTEMPORARY();
 }
 
 
