@@ -8,9 +8,11 @@ https://vanessarayyan.github.io/Cocktail-Recipes/
 Main Page:
 
 <img src="screenshots/Main.png" width=500/>
+
 Results List Display: 
 
 <img src="screenshots/ResultsListDisplay.png" width=500/>
+
 Cocktail Render: 
 
 <img src="screenshots/CocktailRender.png" width=500/> 
