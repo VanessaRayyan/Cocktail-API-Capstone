@@ -10,15 +10,20 @@
 </head>
 <body>
     <div id="container">
+        <header>
+            <h1>Welcome!</h1>
+            <p id="introText">This is your one-stop-shop for finding fabulous cocktail recipes. You can search by name, ingredient, or be surprised with a random cocktail, whether alcoholic or not.</p>
+        </header>
         <form>
             <fieldset>
-                <label class="fieldsetContents" for="cocktailSearch">Cocktail search by</label>
+                <label class="fieldsetContents" for="searchWord">Cocktail search by</label>
                 <div class="searchByRadio">
-                    <input type="radio" name="selection" id="byName" checked>Name</radio>
-                    <input type="radio" name="selection" id="byIngredient">Ingredient</radio>
+                    <input type="radio" name="selection" id="byName" checked>Name
+                    <input type="radio" name="selection" id="byIngredient">Ingredient
                 </div>
                 <input id="searchWord" class="fieldsetContents" name="cocktailSearch" required autofocus placeholder="Type here"/>
             </fieldset>
+            <div id="errormsg"></div>
             <button id="searchButton" type="submit">search</button>
             <span id="or">OR <br>get a random drink</span>
             <div id="randomContainer">
@@ -26,8 +31,8 @@
                 <button class="randomButtons" id="randomNon">non-alcoholic</button>
             </div>
         </form>
-
         <section id="resultsDisplay">
+            <h2 id="resultsH2">- - Results - -</h2>
             <ul id="resultslist">
             </ul>
         </section>
