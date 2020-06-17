@@ -22,3 +22,5 @@ Cocktail Render:
 * CSS
 * JavaScript
 * jQuery
+* Youtube API
+* CocktailDB API
