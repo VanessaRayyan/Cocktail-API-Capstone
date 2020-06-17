@@ -1,12 +1,22 @@
-App Name: Cocktail Recipes
+# Cocktail Recipes
+User will be able to look up cocktail recipes by name or ingredients. There is a feature that a user can get a random alcoholic drink or a non-alcoholic drink. The results will display an image of the cocktail, its ingredients, recipe, and helpful related youtube videos.
 
-Live Link: https://vanessarayyan.github.io/Cocktail-Recipes/
+## Live Link 
+https://vanessarayyan.github.io/Cocktail-Recipes/
 
-Screenshot links of the App: 
-Main Page: Format: ![Alt Text](https://ibb.co/NpDPWTj)
-Results List Display: Format: ![Alt Text](https://ibb.co/WpKCQxj)
-Cocktail Render: ![Alt Text](screenshots/CocktailRender.png) 
+## Screenshots
+Main Page:
 
-Summary: User will be able to look up cocktail recipes by name or ingredients. There is a feature that a user can get a random alcoholic drink or a non-alcoholic drink. The results will display an image of the cocktail, its ingredients, recipe, and helpful related youtube videos.
+<img src="screenshots/Main.png" width=500/>
+Results List Display: 
 
-Technologies used: HTML, CSS, JavaScript, jQuery.
+<img src="screenshots/ResultsListDisplay.png" width=500/>
+Cocktail Render: 
+
+<img src="screenshots/CocktailRender.png" width=500/> 
+
+## Built with
+* HTML 
+* CSS
+* JavaScript
+* jQuery
